@@ -1,57 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ramen Rating App</title>
-    <link rel="stylesheet" href="style.css">
-</head>
-<body>
+    <link rel="stylesheet" href="css/style.css">
+  </head>
+  <body>
     <header>
-        <h1>Ramen Rater</h1>
+      <h1>Ramen Rater</h1>
     </header>
 
     <main>
-        <section id="ramen-menu" class="ramen-menu"></section>
+      <section id="ramen-menu" class="ramen-menu"></section>
+       <div id="ramen-detail" class="ramen-detail">
+        <h2 class="ramen-name">select a Ramen</h2>
 
-        <section id="ramen-detail" class="ramen-detail">
-            <img class="detail-image" src="" alt="Ramen Image">
-            <h2 class="name"></h2>
-            <h3 class="restaurant"></h3>
-            <div class="rating-comment">
-                <span class="rating"></span>
-                <p class="comment"></p>
-            </div>
-        </section>
+      <section id="ramen-images" class="ramen-images">
+        <image src="image/gyukotsu.jpg" alt="gyukotsu ramen"/>
+        <image src="image/kojiro.jpg" alt="kojiro ramen"/>
+        <image src="image/naruto.jpg" alt="naruto ramen"/>
+        <image src="image/nirvana.jpg" alt="nirvana ramen"/>
+        <image src="image/Shoyu ramen.jpg" alt="Shoyu ramen"/>
+        <h2 class="name"></h2>
+        <h3 class="restaurant"></h3>
+        <div class="rating-comment">
+          <span class="rating"></span>
+          <p class="comment"></p>
+        </div>
+      </section>
 
-        <section class="new-ramen">
-            <h2>Add New Ramen</h2>
-            <form id="new-ramen-form">
-                <div class="form-group">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" required>
-                </div>
-                <div class="form-group">
-                    <label for="restaurant">Restaurant:</label>
-                    <input type="text" id="restaurant" required>
-                </div>
-                <div class="form-group">
-                    <label for="image">Image URL:</label>
-                    <input type="url" id="image" required>
-                </div>
-                <div class="form-group">
-                    <label for="rating">Rating:</label>
-                    <input type="number" id="rating" min="0" max="10" required>
-                </div>
-                <div class="form-group">
-                    <label for="comment">Comment:</label>
-                    <textarea id="comment" required></textarea>
-                </div>
-                <button type="submit">Create</button>
-            </form>
-        </section>
+      <section class="new-ramen">
+        <h2>Add New Ramen</h2>
+        <form id="new-ramen-form">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" required />
+          </div>
+          <div class="form-group">
+            <label for="restaurant">Restaurant:</label>
+            <input type="text" id="restaurant" required />
+          </div>
+          <div class="form-group">
+          <label for="image">Image URL:</label>
+          <input type="url" id="image" required>
+      </div>
+          <div class="form-group">
+            <label for="rating">Rating:</label>
+            <input type="number" id="rating" min="0" max="10" required />
+          </div>
+          <div class="form-group">
+            <label for="comment">Comment:</label>
+            <textarea id="comment" required></textarea>
+          </div>
+          <button type="submit">Create</button>
+        </form>
+      </section>
     </main>
 
     <script src="index.js"></script>
-</body>
+  </body>
 </html>
