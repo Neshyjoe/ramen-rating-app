@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ramen Rating App</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" href="data:,"> <!-- Fix favicon error -->
   </head>
   <body>
     <header>
@@ -12,58 +13,53 @@
     </header>
 
     <main>
+      <!-- Ramen Thumbnails Menu -->
       <section id="ramen-menu" class="ramen-menu"></section>
-       <div id="ramen-detail" class="ramen-detail">
-        <h2 class="ramen-name">select a Ramen</h2>
 
-      <section id="ramen-images" class="ramen-images">
-        <image src="image/gyukotsu.jpg" alt="gyukotsu ramen"/>
-        <image src="image/kojiro.jpg" alt="kojiro ramen"/>
-        <image src="image/naruto.jpg" alt="naruto ramen"/>
-        <image src="image/nirvana.jpg" alt="nirvana ramen"/>
-        <image src="image/Shoyu ramen.jpg" alt="Shoyu ramen"/>
-        <h2 class="name"></h2>
-        <h3 class="restaurant"></h3>
-      </section>  
-
-        <div class="rating-comment">
-          <p id="name">name<span class="name"></span></p>
-          <p id="rating">rating<span class="rating"></span></p>
-          <p id="comment">comment<span class="comment"></span></p>
-          <p id="restaurant">restaurant<span class="restaurant"></span></p>
-
+      <!-- Ramen Detail Section -->
+      <section id="ramen-detail" class="ramen-detail">
+        <h2 class="ramen-name">Select a Ramen</h2>
+        <img class="detail-image" src="" alt="Selected Ramen">
+        <div class="detail-info">
+          <h2 class="name"></h2>
+          <h3 class="restaurant"></h3>
+          <div class="rating-comment">
+            <p>Rating: <span class="rating"></span>/10</p>
+            <p>Comment: <span class="comment"></span></p>
+          </div>
         </div>
       </section>
 
-      
-<section class="new-ramen">
-  <h2>Add New Ramen</h2>
-  <form id="new-ramen-form">
-    <div class="form-group">
-      <label for="new-name">Name:</label> 
-      <input type="text" id="new-name" required /> 
-    </div>
-    <div class="form-group">
-      <label for="new-restaurant">Restaurant:</label> 
-      <input type="text" id="new-restaurant" required /> 
-    </div>
-    <div class="form-group">
-      <label for="new-image">Image URL:</label> 
-      <input type="url" id="new-image" required> 
-    </div>
-    <div class="form-group">
-      <label for="new-rating">Rating:</label> 
-      <input type="number" id="new-rating" min="0" max="10" required /> 
-    </div>
-    <div class="form-group">
-      <label for="new-comment">Comment:</label> 
-      <textarea id="new-comment" required></textarea> 
-    </div>
-    <button type="submit">Create</button>
-  </form>
-</section>
+      <!-- New Ramen Form -->
+      <section class="new-ramen">
+        <h2>Add New Ramen</h2>
+        <form id="new-ramen-form">
+          <div class="form-group">
+            <label for="new-name">Name:</label> 
+            <input type="text" id="new-name" required /> 
+          </div>
+          <div class="form-group">
+            <label for="new-restaurant">Restaurant:</label> 
+            <input type="text" id="new-restaurant" required /> 
+          </div>
+          <div class="form-group">
+            <label for="new-image">Image URL:</label> 
+            <input type="url" id="new-image" required> 
+          </div>
+          <div class="form-group">
+            <label for="new-rating">Rating:</label> 
+            <input type="number" id="new-rating" min="0" max="10" required /> 
+          </div>
+          <div class="form-group">
+            <label for="new-comment">Comment:</label> 
+            <textarea id="new-comment" required></textarea> 
+          </div>
+          <button type="submit">Create</button>
+          <!-- Keep your existing form groups with new- prefixes -->
+        </form>
+      </section>
     </main>
 
-    <script src="index.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>
